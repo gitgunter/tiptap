@@ -1,0 +1,7 @@
+@import '/node_modules/locomotive-scroll/dist/locomotive-scroll.css';
+
+body {background: #080808;color: #fff;}
+#root,#overlays{font-family: Pretendard;font-weight:400;}
+:root {
+  --teodriveColor: #207FD6;
+}

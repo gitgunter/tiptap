@@ -56,19 +56,19 @@ const TiptapEditor = () => {
     return null;
   }
 
-  // const handleGetJSONContent = () => {
-  //   if (editor) {
-  //     const jsonContent = editor.getJSON();
-  //     const jsonString = JSON.stringify(jsonContent, null, 2);
-  //     const blob = new Blob([jsonString], { type: 'application/json' });
-  //     const url = URL.createObjectURL(blob);
-  //     const link = document.createElement('a');
-  //     link.href = url;
-  //     link.download = 'editor-content.json';
-  //     link.click();
-  //     URL.revokeObjectURL(url);
-  //   }
-  // };
+  const handleGetJSONContent = () => {
+    if (editor) {
+      const jsonContent = editor.getJSON();
+      const jsonString = JSON.stringify(jsonContent, null, 2);
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'editor-content.json';
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+  };
 
   return (
     <div className='editor-container'>
@@ -204,7 +204,7 @@ const TiptapEditor = () => {
         </BubbleMenu>
       )}
 
-      {/* <div
+      <div
         style={{
           display: 'flex',
           columnGap: '0.625rem',
@@ -215,7 +215,7 @@ const TiptapEditor = () => {
         <button onClick={handleGetJSONContent} className='getJSON'>
           Get JSON Content
         </button>
-      </div> */}
+      </div>
     </div>
   );
 };

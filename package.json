@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "@tiptap/extension-blockquote": "^2.5.1",
     "@tiptap/extension-bold": "^2.5.1",
     "@tiptap/extension-bullet-list": "^2.5.1",
@@ -22,6 +23,7 @@
     "@tiptap/extension-list-item": "^2.5.1",
     "@tiptap/extension-ordered-list": "^2.5.1",
     "@tiptap/extension-paragraph": "^2.5.1",
+    "@tiptap/extension-placeholder": "^2.5.1",
     "@tiptap/extension-strike": "^2.5.1",
     "@tiptap/extension-text": "^2.5.1",
     "@tiptap/extension-text-style": "^2.5.1",
@@ -30,7 +32,8 @@
     "@tiptap/react": "^2.5.1",
     "@tiptap/starter-kit": "^2.5.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-popper": "^2.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
